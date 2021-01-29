@@ -19,3 +19,12 @@ Example payloads:
     'engine': 'dot'
 }
 ```
+
+
+Make sure to add the 'Content-Type: application/json' header to the request, otherwise you might get an error.
+
+For an example graph, use this bash command:
+
+```bash
+$ curl -H 'Content-Type: application/json' -d '{"transitions": "a,x,y b,y,x"}' https://fsa-svc-r3k4irmcka-nn.a.run.app -o file.png
+```
